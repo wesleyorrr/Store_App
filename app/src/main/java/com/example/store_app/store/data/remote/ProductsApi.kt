@@ -1,6 +1,6 @@
-package com.example.store_app.data.remote
+package com.example.store_app.store.data.remote
 
-import com.example.store_app.domain.model.Product
+import com.example.store_app.store.domain.model.Product
 import retrofit2.http.GET
 
 interface ProductsApi {

@@ -1,4 +1,4 @@
-package com.example.store_app.domain.model
+package com.example.store_app.store.domain.model
 
 data class Product (val id : Int,
                     val description: String,

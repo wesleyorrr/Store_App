@@ -1,7 +1,7 @@
-package com.example.store_app.domain.model
+package com.example.store_app.store.domain.model
 
 data class NetworkError(
-    val error:ApiError,
+    val error: ApiError,
     val t: Throwable? = null
 
     )
