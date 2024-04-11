@@ -20,6 +20,6 @@ LoadingDialog(isLoading = state.isLoading)
         topBar ={
 
         } ) {
-
+// so comentario:
     }
 }
