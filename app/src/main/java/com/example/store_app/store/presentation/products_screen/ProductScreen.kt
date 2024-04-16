@@ -4,6 +4,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.staggeredgrid.LazyVerticalStaggeredGrid
 import androidx.compose.foundation.lazy.staggeredgrid.StaggeredGridCells
+import androidx.compose.foundation.lazy.staggeredgrid.items
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -29,7 +30,9 @@ LoadingDialog(isLoading = state.isLoading)
 LazyVerticalStaggeredGrid(modifier = Modifier.padding(top = it.calculateTopPadding()) ,
     columns = StaggeredGridCells.Fixed(2)
 ){
-
+ items(state.products){
+    products ->
+}
 }
     }
 }
