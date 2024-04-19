@@ -1,10 +1,13 @@
 package com.example.store_app.store.presentation.products_screen
 
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
 import com.example.store_app.store.domain.repository.ProductsRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.update
+import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
@@ -15,6 +18,12 @@ class ProducyScreenViewModel @Inject constructor(
     val state = _state.asStateFlow()
 
     fun getProducts(){
+        viewModelScope.launch {
+            _state.update {
+                it.copy(isLoading = true)
+
+            }
+        }
 
     }
 }
