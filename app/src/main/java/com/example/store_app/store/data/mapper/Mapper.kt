@@ -1,6 +1,6 @@
 package com.example.store_app.store.data.mapper
 
-import android.net.http.HttpException
+import retrofit2.HttpException
 import com.example.store_app.store.domain.model.ApiError
 import com.example.store_app.store.domain.model.NetworkError
 import java.io.IOException

@@ -23,7 +23,26 @@ class ProducyScreenViewModel @Inject constructor(
                 it.copy(isLoading = true)
 
             }
-        }
+            productsRepository.getProducts()
+                .onRight {
+                    products ->
+                    _state.update {
+                        it.copy(products = products)
+                    }
+                }
+                .onLeft {
+                   error ->
+                    _state.update {
+                        it.copy(
+                            error = error.error.message
+                             )
+                         }
+                    }
+            _state.update {
+                it.copy(isLoading = true)
 
+                    }
+                }
     }
+
 }
