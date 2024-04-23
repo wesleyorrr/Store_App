@@ -3,6 +3,8 @@ package com.example.store_app.store.presentation.products_screen
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.store_app.store.domain.repository.ProductsRepository
+import com.example.store_app.store.presentation.ultil.sendEvent
+import com.example.store_app.util.Event
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -37,8 +39,16 @@ class ProducyScreenViewModel @Inject constructor(
                             error = error.error.message
                              )
                          }
+                    sendEvent(Event.Toast(error.error.message))
                     }
+
+
             _state.update {
+            it.copy(isLoading = true)
+
+            }
+
+                        _state.update {
                 it.copy(isLoading = true)
 
                     }
