@@ -8,8 +8,8 @@ import androidx.compose.foundation.lazy.staggeredgrid.items
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import com.example.store_app.store.presentation.ultil.LoadingDialog
-import com.example.store_app.store.presentation.ultil.MyTopAppBar
+import com.example.store_app.store.presentation.ultil.components.LoadingDialog
+import com.example.store_app.store.presentation.ultil.components.MyTopAppBar
 
 @Composable
 internal fun ProductsScreen(){

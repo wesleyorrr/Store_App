@@ -1,4 +1,4 @@
-package com.example.store_app.store.presentation.ultil
+package com.example.store_app.store.presentation.ultil.components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
