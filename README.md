@@ -1,6 +1,6 @@
 # Store App
 
-Este projeto é um aplicativo baseado em Kotlin projetado para gerenciar o inventário e as operações de vendas de uma loja.
+Este projeto é um aplicativo desenvolvido em Kotlin projetado para gerenciar o inventário e as operações de vendas de uma loja.
 
 ## Instalação
 Para instalar o projeto, clone o repositório e construa-o usando seu sistema de build compatível com Kotlin preferido.
